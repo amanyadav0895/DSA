@@ -1,17 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2, num3;
+    char c;
 
-    printf("Enter three numbers: ");
-    scanf("%d %d %d", &num1, &num2, &num3);
+    printf("Enter an c: ");
+    scanf("%c", &c);
 
-    if (num1 >= num2 && num1 >= num3) {
-        printf("The largest number is %d\n", num1);
-    } else if (num2 >= num1 && num2 >= num3) {
-        printf("The largest number is %d\n", num2);
+    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+        c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
+        printf("%c is a vowel.\n", c);
     } else {
-        printf("The largest number is %d\n", num3);
+        printf("%c is a consonant.\n", c);
     }
 
     return 0;
